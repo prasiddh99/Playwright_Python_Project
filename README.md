@@ -135,10 +135,10 @@ pytest
 pytest tests/test_Framework_e2e_checkout.py
 ```
 
-## Run With HTML Report
+## Run Tests in Parallel with HTML Report
 
 ```bash
-pytest --html=reports/report.html --self-contained-html
+pytest tests -n auto --browser_name=firefox -v --html=reports/report.html --self-contained-html
 ```
 
 ---
